@@ -194,6 +194,8 @@ module.exports = function(grunt) {
                 this._next = token;
               };
               this._shift = function () {
+                // returning null signals EOF
+                // returning undefined means the line was ignored
                 if (this._next !== undefined) {
                   var result = this._next;
                   this._next = undefined;
