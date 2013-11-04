@@ -165,10 +165,10 @@ module.exports = function(grunt) {
               };
             }
             function markdown2html(markdownString) {
+              // the slice removes the <p>...</p> wrapper output by Markdown processor
               return markdown.toHTML(markdownString.trim()).slice(3, -4);
             }
             function VarDocstring(markdownString) {
-              // the slice removes the <p>...</p> wrapper output by Markdown processor
               this.html = markdown2html(markdownString);
             }
             function SectionDocstring(markdownString) {
