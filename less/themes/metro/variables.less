@@ -1,0 +1,133 @@
+// Accent colors
+// -------------------------
+@blue:      #2E8BCC;
+@green:     #339933;
+@red:       #E51400;
+@yellow:    #ffc40d;
+@orange:    #F09609;
+@pink:      #E671B8;
+@purple:    #7B4F9D;
+@lime:      #8CBF26;
+@magenta:   #FF0097;
+@teal:      #00ABA9;
+@white:     #FFFFFF;
+@theme-color: @magenta;
+
+// Grays
+// -------------------------
+
+@gray-darker:   fadeout(#000, 20%); // #222
+@gray-dark:     fadeout(#000, 30%);   // #333
+@gray:          fadeout(#000, 60%); // #555
+@gray-light:    fadeout(#fff, 60%);   // #999
+@gray-lighter:  fadeout(#fff, 20%); // #eee
+
+
+// Brand colors
+// -------------------------
+
+@brand-primary: @theme-color;
+@brand-success: @green;
+@brand-warning: @orange;
+@brand-danger:  @red;
+@brand-info:    @blue;
+
+
+// Typography
+// -------------------------
+@text-color:            #000;
+
+@font-family-sans-serif: "Segoe UI", "Segoe WP", "Helvetica Neue", sans-serif;
+@font-family-serif: Georgia, "Times New Roman", Times, serif;
+@font-family-monospace: Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-base: @font-family-sans-serif;
+
+@headings-font-family: "Segoe UI Light", "Helvetica Neue", "Segoe UI", "Segoe WP", sans-serif;
+@headings-font-weight: 200;
+
+@font-size-base:          11pt;
+@font-size-large:         ceil(@font-size-base * 1.25);
+@font-size-small:         ceil(@font-size-base * 0.85);
+
+@font-size-h1:            42pt;
+@font-size-h2:            20pt;
+@font-size-h3:            20pt;
+@font-size-h4:            @font-size-base;
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil(@font-size-base * 0.85);
+
+// Components
+// -------------------------
+
+@border-radius-base: 0px;
+@border-radius-large: 0px;
+@border-radius-small: 0px;
+
+
+// Navbar
+// -------------------------
+
+// Basics of a navbar
+@navbar-default-bg: @theme-color;
+@navbar-default-border: @theme-color;
+
+
+// Navbar links
+@navbar-default-link-color: @white;
+@navbar-default-link-hover-color: @white;
+@navbar-default-link-hover-bg: fadeout(@navbar-default-bg, 6.5%);
+@navbar-default-link-active-color: @white;
+@navbar-default-link-active-bg: fadeout(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color: @gray;
+@navbar-default-link-disabled-bg: transparent;
+
+@navbar-inverse-link-hover-color:           @theme-color;
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-disabled-color:        @gray;
+
+@navbar-inverse-brand-hover-color:          @theme-color;
+
+
+// Button
+
+@btn-default-color:     @gray-lighter;
+@btn-default-bg:        #666;
+@btn-default-border:    @gray;
+
+@btn-primary-color:     @gray-lighter;
+@btn-primary-border:    @brand-primary;
+@btn-primary-border:    fadein(@btn-primary-bg, 5%);
+
+@btn-success-color:     @gray-lighter;
+@btn-success-bg:        @brand-success;
+@btn-success-border:    fadein(@btn-success-bg, 5%);
+
+@btn-warning-color:     @gray-lighter;
+@btn-warning-bg:        @brand-warning;
+@btn-warning-border:    fadein(@btn-warning-bg, 5%);
+
+@btn-danger-color:      @gray-lighter;
+@btn-danger-bg:         @brand-danger;
+@btn-danger-border:     fadein(@btn-danger-bg, 5%);
+
+@btn-info-color:        @gray-lighter;
+@btn-info-bg:           @brand-info;
+@btn-info-border:       fadein(@btn-info-bg, 5%);
+@btn-link-disabled-color: @gray-light;
+
+// Tiles
+// -----------------------
+@tileWidth: 130px;
+
+
+
+// Pager
+// -------------------------
+
+@pager-border-radius: 0px;
+@pager-disabled-color: @gray-light;
+
+
+// Badges
+// -------------------------
+@badge-border-radius: 0px;

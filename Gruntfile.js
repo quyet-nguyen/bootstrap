@@ -100,6 +100,17 @@ module.exports = function(grunt) {
         },
         src: ['less/theme.less'],
         dest: 'dist/css/<%= pkg.name %>-theme.min.css'
+      },
+      theme_metro: {
+        src: ['less/themes/metro/theme.less'],
+        dest: 'dist/css/<%= pkg.name %>-theme-metro.css'
+      },
+      theme_metro_min: {
+        options: {
+          compress: true
+        },
+        src: ['less/themes/metro/theme.less'],
+        dest: 'dist/css/<%= pkg.name %>-theme-metro.min.css'
       }
     },
 
